@@ -74,7 +74,7 @@ int main()
     FILE* fout;
     
     fin = fopen("KnightsRegistrar.in", "r");
-    fout = fopen("KnightsRegistrar-Daniel.out", "w");
+    fout = fopen("KnightsRegistrar.out", "w");
     
     if(fin == NULL) {
         printf("The input file could not be opened.\n");
