@@ -89,9 +89,9 @@ KMSale *destroyKMS(KMSale *saleList);
 
 int main() {
 	// Open input and output files.
-	FILE *fin = fopen("sampleinput/KnightsMart.in", "r");
+	FILE *fin = fopen("KnightsMart.in", "r");
 	fileCheck(fin);
-	FILE *fout = fopen("sampleinput/KnightsMart.out", "w");
+	FILE *fout = fopen("KnightsMart.out", "w");
 	fileCheck(fout);
 
 	int i, j, k;
