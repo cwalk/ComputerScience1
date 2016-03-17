@@ -40,9 +40,9 @@ int recursiveCall;
 
 int main() {
 	int ii = 1;
-	FILE *fin = fopen("test/KStest.in", "r");
+	FILE *fin = fopen("KStest.in", "r");
 	fileCheck(fin);
-	FILE *fout = fopen("test/KStestme.out", "w");
+	FILE *fout = fopen("KStestme.out", "w");
 	fileCheck(fout);
 
 	while(!feof(fin)) {
