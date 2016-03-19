@@ -5,6 +5,7 @@
  */
 
 #include <stdio.h>
+#include <stdlib.h>
 #include <string.h>
 
 #define EMPTY -1
@@ -78,7 +79,7 @@ int main()
     
     if(fin == NULL) {
         printf("The input file could not be opened.\n");
-        system("PAUSE");
+        //system("PAUSE");
         return 0;    
     }
     
