@@ -18,6 +18,6 @@ To execute: `$ ./[Executable File Name]`
 
 ##Example
 
-`$ gcc -o Knightsball Knightsball.c`
+`$ gcc Knightsball.c -o Knightsball`
 
 `$ ./Knightsball`
