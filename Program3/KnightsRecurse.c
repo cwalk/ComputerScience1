@@ -6,6 +6,7 @@
 
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 
 #define nullCheck( ptr ); if( ptr == NULL ) { printf("\n\nFailure allocating memory! Check line %d! Terminating Program!\n", __LINE__); exit(EXIT_FAILURE); }
 #define fileCheck( ptr ); if( ptr == NULL ) { printf("\n\nFile not found! Check line %d! Terminating Program!\n", __LINE__); exit(EXIT_FAILURE); }
@@ -40,9 +41,9 @@ int recursiveCall;
 
 int main() {
 	int ii = 1;
-	FILE *fin = fopen("KStest.in", "r");
+	FILE *fin = fopen("KnightsRecurse.in", "r");
 	fileCheck(fin);
-	FILE *fout = fopen("KStestme.out", "w");
+	FILE *fout = fopen("KnightsRecurse.out", "w");
 	fileCheck(fout);
 
 	while(!feof(fin)) {
@@ -54,12 +55,12 @@ int main() {
 		}
 
 		else if(!strcmp(token, "KnightsScotch")) {
-			printf("KnightsScotch %d\n", ii);
+			//printf("KnightsScotch %d\n", ii);
 			KnightsScotch(fin, fout);
 		}
 
 		else if(!strcmp(token, "KnightsDepot")) {
-			printf("Enter KnightsDepot\n");
+			//printf("Enter KnightsDepot\n");
 			KnightsDepot(fin, fout);
 		}
 
@@ -74,7 +75,7 @@ int main() {
 	}
 	fclose(fin);
 	fclose(fout);
-	system("PAUSE");
+	//system("PAUSE");
 	exit(EXIT_SUCCESS);
 }
 
