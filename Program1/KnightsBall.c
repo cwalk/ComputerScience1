@@ -45,7 +45,7 @@ int main() {
 
 	// Scan in the data to the lottery player structs.
 	for(i = 0; i < numPlayers; i++) {
-		fscanf(fin, "%s%s%", players[i].lastName, players[i].firstName);
+		fscanf(fin, "%s%s", players[i].lastName, players[i].firstName);
 		for(j = 0; j < 6; j++) {
 			fscanf(fin, "%d", &players[i].numbers[j]);
 		}
